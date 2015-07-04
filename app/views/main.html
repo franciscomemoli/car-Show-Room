@@ -1,6 +1,23 @@
 <div ng-init="loadHome()">
-
-  <div ng-repeat="car in cars">
-    {{car.model}}
-  </div>
+	<div class="row searchBox" >
+	<div class="input-group input-group-lg col-sm-offset-2 col-sm-8 ">
+		<input type="search" ng-model="searchText" class="form-control searchInput" placeholder="Search your brand!">
+	</div>
+	</div>
+	<div class="row">
+		<div class="carsList">
+		<div ng-repeat="car in cars | filterCarBy:'brand': searchTextApplied" class="col-sm-4 animate">
+			<div  class="panel panel-default">
+				<div class="containerCarImage">
+					<img ng-src="{{car.image}}" class="img-responsive">
+				</div>
+				<div class="carInformation">
+					<h3>{{car.brand | capitalize}} {{car.model | capitalize}}</h3>
+					<p>{{car.year}}</p>
+					<p>{{car.price | currency}}</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
 </div>

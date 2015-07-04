@@ -8,19 +8,23 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body ng-app="carShowRoomApp">
+    <div class="sublayer"></div>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="header">
+
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -32,7 +36,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">carShowRoom</a>
+            <div class="navbar-brand" >Car Show Room</div>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -82,7 +86,9 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/services/carservice.js"></script>
+        <script src="scripts/services/carService.js"></script>
+        <script src="scripts/filters/capitalize.js"></script>
+        <script src="scripts/filters/filterCarBy.js"></script>
         <!-- endbuild -->
 </body>
 </html>

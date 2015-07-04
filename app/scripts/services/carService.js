@@ -17,17 +17,17 @@ angular.module('carShowRoomApp')
         		{
         		id: 1,
         		image:  'images/cars/car_1.jpg',
-				model:  'fit',
+				model:  'luna',
 				year :  '1981',
-				brand:  'honda',
+				brand:  'mercedez',
 				price:  8482363,
         		},
         		{
         		id: 2,
         		image:  'images/cars/car_2.jpg',
-				model:  'fit',
+				model:  'night',
 				year :  '1982',
-				brand:  'honda',
+				brand:  'lamborghini',
 				price:  8482363,
         		},
         		{
@@ -35,15 +35,15 @@ angular.module('carShowRoomApp')
         		image:  'images/cars/car_3.jpg',
 				model:  'fit',
 				year :  '1983',
-				brand:  'honda',
+				brand:  'lamborghini',
 				price:  8482363,
         		},
         		{
         		id: 4,
         		image:  'images/cars/car_4.jpg',
-				model:  'fit',
+				model:  'sport',
 				year :  '1984',
-				brand:  'honda',
+				brand:  'toyota',
 				price:  8482363,
         		},
         		{
@@ -51,7 +51,7 @@ angular.module('carShowRoomApp')
         		image:  'images/cars/car_5.jpg',
 				model:  'fit',
 				year :  '1985',
-				brand:  'honda',
+				brand:  'audi',
 				price:  8482363,
         		},
         		{
@@ -59,7 +59,7 @@ angular.module('carShowRoomApp')
         		image:  'images/cars/car_6.jpg',
 				model:  'fit',
 				year :  '1986',
-				brand:  'honda',
+				brand:  'ferrari',
 				price:  8482363,
         		},
         		{
@@ -67,7 +67,7 @@ angular.module('carShowRoomApp')
         		image:  'images/cars/car_7.jpg',
 				model:  'fit',
 				year :  '1987',
-				brand:  'honda',
+				brand:  'Koenigsegg',
 				price:  8482363,
         		},];
         	deferred.resolve(data);
