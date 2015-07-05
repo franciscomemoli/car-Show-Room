@@ -1,12 +1,12 @@
 <div ng-init="loadHome()">
 	<div class="row searchBox" >
-	<div class="input-group input-group-lg col-sm-offset-2 col-sm-8 ">
+	<div class="input-group input-group-lg col-xs-offset-2 col-xs-8 ">
 		<input type="search" ng-model="searchText" class="form-control searchInput" placeholder="Search your brand!">
 	</div>
 	</div>
 	<div class="row">
-		<div class="carsList">
-		<div ng-repeat="car in cars | filterCarBy:'brand': searchTextApplied | orderBy : 'brand'" class="col-sm-4 col-xs-12 animate">
+		<div class="col-xs-11 col-xs-offset-1-5 carsList">
+		<div ng-repeat="car in cars | filterCarBy:'brand': searchTextApplied | orderBy : 'brand'" class="col-xs-12 col-sm-4 col-md-4 col-lg-4  animate">
 			<div class="panel panel-default" ng-class="{panelselected: car.selected}">
 				<div class="containerCarImage" ng-click="select(car)">
 					<div class="panelSelected"></div>
@@ -22,8 +22,8 @@
 		</div>
 	</div>
 </div>
-<div class="floatToolBar">
-	<div class="compareButton" ng-click="compare()" title="click on the images to compare">
+<div class="floatToolBar" ng-click="compare()">
+	<div class="compareButton"  title="click on the images to compare">
 		<p>Compare</p>
 	</div>
 </div>

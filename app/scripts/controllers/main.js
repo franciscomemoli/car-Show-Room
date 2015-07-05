@@ -8,7 +8,7 @@
  * Controller of the carShowRoomApp
  */
 angular.module('carShowRoomApp')
-  .controller('MainCtrl', function ($scope,carService,$timeout,$modal) {
+  .controller('MainCtrl', function ($scope,carService,$timeout,$modal,dialogs) {
     $scope.cars = [];
     $scope.loadHome = function (){
     	var promise = carService.getAll();
@@ -28,31 +28,41 @@ angular.module('carShowRoomApp')
 	            }
 	        }
 	        if(carsToCompare.length === 3 ){
-	        	console.log("error");
+	        	var opts = {
+			    'size': 'sm'
+				};
+	        	dialogs.error('Error','Can\'t select more than tree cars to campare. Please deselect one.',opts);
 	        }else{
 	    		car.selected = (car.selected)? false : true;
 	        }
     	}
     };
     $scope.compare = function(){
-		var modalInstance = $modal.open({
-            animation: $scope.animationsEnabled,
-            templateUrl: 'views/compare.html',
-            controller: 'CompareCtrl',
-            size: 'lg',
-            resolve: {
-                items: function () {
-	                    var carsToCompare = [];
-	                    for (var i = 0; i < $scope.cars.length; i++) {
-	                        if ($scope.cars[i].selected) {
-	                            carsToCompare.push(angular.copy($scope.cars[i]));
-	                        }
-	                    }
-	                    return carsToCompare;
-                	}
-            	}
-   			});
-		};
+    	var carsToCompare = [];
+        for (var i = 0; i < $scope.cars.length; i++) {
+            if ($scope.cars[i].selected) {
+                carsToCompare.push(angular.copy($scope.cars[i]));
+            }
+        }
+    	if(carsToCompare.length < 2 ){
+        	var opts = {
+		    'size': 'sm'
+			};
+        	dialogs.error('Error','Please select at least two cars to compare.<br> To select, click on the car image.',opts);
+        }else{
+			var modalInstance = $modal.open({
+	            animation: $scope.animationsEnabled,
+	            templateUrl: 'views/compare.html',
+	            controller: 'CompareCtrl',
+	            size: 'lg',
+	            resolve: {
+	                items: function () {
+		                    return carsToCompare;
+	                	}
+	            	}
+	   			});
+        }
+	};
     $scope.searchText = '';
     $scope.searchTextApplied = '';
     var filterTextTimeout;

@@ -14,7 +14,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngTouch',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'dialogs.main',
+    'dialogs.default-translations'
   ])
   .config(function ($routeProvider) {
     $routeProvider

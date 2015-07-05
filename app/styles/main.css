@@ -18,8 +18,11 @@ html, body{
   z-index: 999;
   border: 1px solid transparent;
 }
+.col-xs-offset-1-5{
+  margin-left: 4.166666667%;
+}
 .searchBox{
-  background: url('../images/background/background.jpg') left 322px;
+  background: url('../images/background/background.jpg');
   height: 200px;
   background-size: cover;
 }
@@ -40,9 +43,6 @@ box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
   z-index: -1;
 }
 .carsList{
-  width: 90%;
-  margin: auto;
-  display: table;
     background-color: rgba(239, 239, 239, 0.94);
   position: relative;
   top: -20px;
@@ -188,11 +188,21 @@ box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
 }
 @media (min-width: 400px){
   .containerCarImage{
-    height: 180px;
+      height: 240px;
+  }
+}
+@media (min-width: 600px){
+  .containerCarImage{
+    height: 310px;
   }
 }
 @media (min-width: 768px){
   .containerCarImage{
-    height: 180px;
+      height: 100px;
+  }
+}
+@media (min-width: 992px){
+  .containerCarImage{
+      height: 170px;
   }
 }

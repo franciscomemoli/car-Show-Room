@@ -7,14 +7,14 @@
 		"year" :  "1981",
 		"brand":  "mercedez",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 2,
 		"image":  "images/cars/car_2.jpg",
 		"image_list":"images/cars/car_2.jpg",
@@ -22,14 +22,14 @@
 		"year" :  "1982",
 		"brand":  "lamborghini",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 3,
 		"image":  "images/cars/car_3.jpg",
 		"image_list":"images/cars/car_3.jpg",
@@ -37,14 +37,14 @@
 		"year" :  "1983",
 		"brand":  "lamborghini",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 4,
 		"image":  "images/cars/car_4.jpg",
 		"image_list":"images/cars/car_4.jpg",
@@ -52,14 +52,14 @@
 		"year" :  "1984",
 		"brand":  "toyota",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 5,
 		"image":  "images/cars/car_5.jpg",
 		"image_list":"images/cars/car_5.jpg",
@@ -67,14 +67,14 @@
 		"year" :  "1985",
 		"brand":  "audi",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 6,
 		"image":  "images/cars/car_6.jpg",
 		"image_list":"images/cars/car_6.jpg",
@@ -82,14 +82,14 @@
 		"year" :  "1986",
 		"brand":  "ferrari",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
 		"aceleration": "9,7 s",
 		"consumption":"6,3 l/100km"
 	},
-							{
+	{
 		"id": 7,
 		"image":  "images/cars/car_7.jpg",
 		"image_list":"images/cars/car_7.jpg",
@@ -97,7 +97,7 @@
 		"year" :  "1987",
 		"brand":  "Koenigsegg",
 		"price":  8482363,
-		"engine":"Motor diésel, 4 cilindros en línea con turbocompresor de gases de escape de geometría variable (VTG), dos árboles de levas en cabeza (DOHC), inyección directa TDI",
+		"engine":"Motor diésel,TDI",
 		"maxPower":"150/3250-4200",
 		"torque": "320/1500 - 3250",
 		"maxVel": "200 km/h",
