@@ -6,18 +6,27 @@
 	</div>
 	<div class="row">
 		<div class="carsList">
-		<div ng-repeat="car in cars | filterCarBy:'brand': searchTextApplied" class="col-sm-4 animate">
-			<div  class="panel panel-default">
-				<div class="containerCarImage">
-					<img ng-src="{{car.image}}" class="img-responsive">
+		<div ng-repeat="car in cars | filterCarBy:'brand': searchTextApplied | orderBy : 'brand'" class="col-sm-4 col-xs-12 animate">
+			<div class="panel panel-default" ng-class="{panelselected: car.selected}">
+				<div class="containerCarImage" ng-click="select(car)">
+					<div class="panelSelected"></div>
+					<img ng-src="{{car.image_list}}" class="img-responsive" title="Click to compare">
 				</div>
 				<div class="carInformation">
 					<h3>{{car.brand | capitalize}} {{car.model | capitalize}}</h3>
 					<p>{{car.year}}</p>
 					<p>{{car.price | currency}}</p>
+					<div class="btn-link text-center viewMore" ng-click="show(car)">View More</div>
 				</div>
 			</div>
 		</div>
-		</div>
 	</div>
 </div>
+<div class="floatToolBar">
+	<div class="compareButton" ng-click="compare()" title="click on the images to compare">
+		<p>Compare</p>
+	</div>
+</div>
+ <script type="text/ng-template" id="errorMessage.html">
+ You can compare only tree cars at the same time.
+ </script>

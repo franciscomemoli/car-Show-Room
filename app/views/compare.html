@@ -1,0 +1,58 @@
+<div ng-init="load()" class="compareContainer">
+    <h3 class="modal-title">Comparisson</h3>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-4 col-xs-6" ng-repeat="car in cars">
+                    <div class="">
+                        <h3>{{car.name}}</h3>
+                    </div>
+                    <div class="">
+                    	<div class="containerCarImage">
+                        	<img ng-src="{{car.image}}" class="img-responsive">
+                    	</div>
+                        <table class="table table-condensed">
+                            <tr>
+                                <td><b>Brand</b></td>
+                                <td>{{car.brand}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Year</b></td>
+                                <td>{{car.year}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Price</b></td>
+                                <td>{{car.price | currency}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Max. Power</b></td>
+                                <td>{{car.maxPower}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Torque</b></td>
+                                <td>{{car.torque}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Max Vel</b></td>
+                                <td>{{car.maxVel}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Aceleration</b></td>
+                                <td>{{car.aceleration}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Consumption</b></td>
+                                <td>{{car.consumption}}</td>
+                            </tr>
+                            <tr>
+                                <td><b>Engine</b></td>
+                                <td>{{car.engine}}</td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="close()">CLOSE</button>
+    </div>
+</div>

@@ -23,7 +23,11 @@ html, body{
   height: 200px;
   background-size: cover;
 }
-
+.searchBox .input-group input.form-control{
+-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
 .sublayer {
   background-image: url(../images/background/dark_Tire.png);
     background-repeat: repeat;
@@ -36,7 +40,7 @@ html, body{
   z-index: -1;
 }
 .carsList{
-width: 90%;
+  width: 90%;
   margin: auto;
   display: table;
     background-color: rgba(239, 239, 239, 0.94);
@@ -51,23 +55,33 @@ width: 90%;
   border-radius: 5px;
 }
 .carsList .panel-default{
-cursor: pointer;
--webkit-box-shadow: 3px 3px 17px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 17px -5px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 17px -5px rgba(0,0,0,0.75);
+  position: relative;
   border: none;
 }
+.panelSelected {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: solid 8px rgb(218, 183, 45);
+  z-index: 1;
+  box-shadow: 3px 3px 17px -5px rgba(0,0,0,0.75);
+}
+.panelselected .panelSelected{
+  display: block;
+
+}
 .carsList .panel-default:hover{
--webkit-box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
 }
 .carsList .carInformation{
   padding: 20px;
 }
-.carsList .containerCarImage{
+.containerCarImage{
   overflow: hidden;
-  height: 180px;
+  height: 80px;
 }
 .carsList .carInformation, .carsList .containerCarImage{
   background-color: #FFFFFF;
@@ -117,4 +131,68 @@ box-shadow: 3px 3px 25px -3px rgba(0,0,0,0.75);
     -o-transform: scale(1);
     transform: scale(1);
 }
-
+.floatToolBar{
+  cursor: pointer;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  background-color: rgba(239, 239, 239, 0.94);
+  color: black;
+  height: 100px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: -4px 0px 26px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 0px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 0px 26px 0px rgba(0,0,0,0.75);
+  z-index: 2;
+}
+.floatToolBar .compareButton{
+  position: relative;
+  bottom: -36px;
+  font-size: 19px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  writing-mode: lr-tb;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.notFound {
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+.showCarContainer,
+.compareContainer{
+  padding: 20px;
+  background-color: rgba(239, 239, 239, 1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.btn-link{
+  cursor: pointer;
+}
+.showCarContainer{
+  font-size: 18px;
+}
+.showCarContainer .carInformation {
+  margin-top: 20px;
+}
+.viewMore {
+  font-size: 20px;
+}
+@media (min-width: 400px){
+  .containerCarImage{
+    height: 180px;
+  }
+}
+@media (min-width: 768px){
+  .containerCarImage{
+    height: 180px;
+  }
+}
